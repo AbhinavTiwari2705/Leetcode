@@ -16,7 +16,6 @@ public:
             mep[nums[i]] = i;
            
         }
-
         return ans;
     }
 };
