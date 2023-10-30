@@ -7,6 +7,6 @@ public:
                 count++;
             }
         }
-        return static_cast<double>(count) / s.size() * 100;
+        return (count*100) / s.size() ;
     }
 };
