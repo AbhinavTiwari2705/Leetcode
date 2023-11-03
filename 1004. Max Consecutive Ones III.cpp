@@ -8,6 +8,7 @@ public:
                 zerocnt++;
                 
             }
+            
             while(zerocnt>k){
                 if(nums[i]==0){
                     zerocnt--;
