@@ -10,6 +10,7 @@ public:
         {
             int men = min(height[i], height[j]);
 
+            
             ans = men * abs((i - j));
             if (height[i] < height[j])
             {
