@@ -6,6 +6,7 @@ public:
         while(j<n){
             if(nums[j]==0){
                 
+                
                 zerocnt++;
                 
             }
