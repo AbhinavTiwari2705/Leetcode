@@ -8,6 +8,7 @@ public:
                 if(!st.empty()) ans+=i;
                 st.push(i);
             }
+                
             else{
                 st.pop();
                 if(!st.empty()){
