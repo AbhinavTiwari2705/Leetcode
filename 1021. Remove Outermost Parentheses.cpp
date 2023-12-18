@@ -5,6 +5,7 @@ public:
         stack<char>st;
         for(auto i:s){
             if(i=='('){
+                
                 if(!st.empty()) ans+=i;
                 st.push(i);
             }
