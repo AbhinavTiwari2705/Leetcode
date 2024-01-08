@@ -8,6 +8,7 @@ public:
             if (nums[i] < third) return true;
             while (!s.empty() && s.top() < nums[i]) {
                 third = s.top();
+                
                 s.pop();
             }
             s.push(nums[i]);
