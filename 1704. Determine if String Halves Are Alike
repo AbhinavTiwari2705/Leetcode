@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool isVowel(char ch) {
+        ch = tolower(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+
+    bool halvesAreAlike(string s) {
+        int l = s.size();
+        int count = 0;
+        int count2 = 0;
+
+        for (int i = 0; i < l / 2; i++) {
+            if (isVowel(s[i])) count++;
+        }
+
+        for (int i = l / 2; i < l; i++) {
+            if (isVowel(s[i])) count2++;
+        }
+
+        return count2 == count;
+    }
+};
