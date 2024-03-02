@@ -1,0 +1,31 @@
+class RecentCounter {
+public:
+queue<int> q;
+
+    RecentCounter() {
+        
+    }
+    
+    int ping(int t) {
+        q.push(t);
+        while(q.front()<t-3000){
+            q.pop();
+        }
+        return q.size();
+        
+    }
+};
+
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * RecentCounter* obj = new RecentCounter();
+ * int param_1 = obj->ping(t);
+ */
+
+  auto init = []()
+{ 
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
