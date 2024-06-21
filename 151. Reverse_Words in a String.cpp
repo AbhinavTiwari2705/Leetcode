@@ -14,6 +14,7 @@ public:
                 j++;
             }
             string sub = s.substr(i, j - i);
+            
             if (result.length() == 0) result = sub;
             else {
                 result = sub + " " + result;
