@@ -9,6 +9,7 @@ private:
         while (!q.empty()) {
             int node = q.front();
             q.pop();
+            
             for (auto i : adj[node]) {
                 if (!vis[i]) {
                     q.push(i);
