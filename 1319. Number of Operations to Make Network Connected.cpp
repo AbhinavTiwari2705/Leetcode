@@ -5,7 +5,6 @@ private:
         queue<int> q;
         q.push(n);
         vis[n] = 1;
-
         while (!q.empty()) {
             int node = q.front();
             q.pop();
